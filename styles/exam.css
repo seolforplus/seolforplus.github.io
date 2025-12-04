@@ -29,3 +29,34 @@ nav a{
 nav a:hover{
     background-color: gray;
 }
+article{
+    width: 75%;
+    float: left;
+    padding: 20px;
+    border-right: 2px solid black;
+    box-sizing: border-box;
+}
+article h1{
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+article h2{
+    color: black;
+    margin-top: 30px;
+}
+article p::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+article img{
+    float: right;
+    margin: 0 0 15px 15px;
+    border: 2px solid black;
+    display: block;
+}
+article a{
+    float: right;
+}
+
