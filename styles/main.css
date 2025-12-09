@@ -11,7 +11,7 @@ body{
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
     background-image: url("../images/shlogo.webp");
-    background-size: auto;
+    background-size: 150px;
     background-position: right;
     background-repeat: repeat-y;
     background-attachment: fixed;
