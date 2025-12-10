@@ -1,62 +1,136 @@
-body{
-    width: 95%;
-    margin: 15px auto;
-    font-family: Arial, sans-serif;
-    background-image: url('/images/NasaObs.webp');
-    background-repeat: repeat-y;
-    background-position: right;
-    background-attachment: fixed;
-    border: 2px solid black;
-    padding: 0;
+html {
+  background: linear-gradient(to bottom, white);
+  height: 100%;
 }
-nav{
-    background-color: black;
-    border-bottom: 3px solid black;
+body {
+  width: 95%;
+  margin: 15px auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border: 2px solid blue;
+  background-image: url("../images/NasaObs.webp");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: 200px;
 }
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
 }
-nav a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+#nav_menu ul li {
+  float: left;
 }
-nav a:hover{
-    background-color: gray;
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  width: 175px;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-right: 2px solid white;
 }
-article{
-    width: 75%;
-    float: left;
-    padding: 20px;
-    border-right: 2px solid black;
-    box-sizing: border-box;
+#nav_menu ul li a.lastitem {
+  border-right: none;
 }
-article h1{
-    color: black;
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
+#nav_menu ul li a:hover {
+  background-color: yellow;
+  color: blue;
 }
-article h2{
-    color: black;
-    margin-top: 30px;
+#nav_menu ul li a.current {
+  color: yellow;
 }
-article p::first-letter{
-    font-size: 2em;
-    font-weight: bold;
-    font-style: italic;
+main {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  padding-top: 10px;
 }
-article img{
-    float: right;
-    margin: 0 0 15px 15px;
-    border: 2px solid black;
-    display: block;
+article {
+  clear: left;
+  width: 70%;
+  float: left;
+  column-count: 3;
+  column-rule: 2px dotted blue;
+  column-gap: 2em;
+  margin-left: 2em;
 }
-article a{
-    float: right;
+article section {
+  width: 47%;
+  border-bottom: 2px dotted blue;
+  padding-bottom: 10px;
 }
-
+h1, h2 {
+  color: #0033cc;
+}
+h1 {
+  width: 100%;
+  border-bottom: 2px solid blue;
+}
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.first-letter {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+img {
+  float: left;
+  margin: 5px 10px 5px 0;
+  border: 1px solid blue;
+  width: 150px;
+  height: auto;
+}
+aside {
+  width: 20%;
+  position: fixed;
+  right: 2%;
+  top: 150px;
+  background-color: #cce6ff;
+  border: 2px solid blue;
+  padding: 10px;
+  font-size: 0.9em;
+}
+aside ol {
+  list-style-type: upper-roman;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+aside ul {
+  list-style-type: lower-alpha;
+  margin-left: 25px;
+}
+aside a {
+  color: #0033cc;
+  text-decoration: underline;
+}
+aside a:hover {
+  color: blue;
+  text-decoration: none;
+}
+aside .top {
+  display: block;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid blue;
+  background-color: #f2f2f2;
+}
+footer a {
+  color: #0033cc;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: blue;
+}
